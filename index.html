@@ -17,10 +17,21 @@
     }
     main {
       text-align: center;
-      padding: 2rem;
+      padding: 3rem;
+      border: 1px solid #e0e0e0;
+      border-radius: 4px;
+      background: white;
+      max-width: 420px;
+    }
+    .logo {
+      margin-bottom: 1.5rem;
+    }
+    .logo svg {
+      width: 80px;
+      height: 80px;
     }
     h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       font-weight: 600;
       letter-spacing: -0.02em;
       margin-bottom: 1rem;
@@ -28,6 +39,12 @@
     p {
       font-size: 1.1rem;
       color: #555;
+      margin-bottom: 1rem;
+      line-height: 1.5;
+    }
+    .subline {
+      font-size: 0.95rem;
+      color: #888;
       margin-bottom: 2rem;
     }
     a {
@@ -43,9 +60,19 @@
 </head>
 <body>
   <main>
+    <div class="logo">
+      <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Two interlocking rings representing bilateral agreement -->
+        <circle cx="30" cy="40" r="18" stroke="#111" stroke-width="3" fill="none"/>
+        <circle cx="50" cy="40" r="18" stroke="#111" stroke-width="3" fill="none"/>
+        <!-- Small anchor point at intersection -->
+        <circle cx="40" cy="40" r="4" fill="#111"/>
+      </svg>
+    </div>
     <h1>DM0</h1>
-    <p>Settlement infrastructure for bilateral finance</p>
-    <a href="mailto:allan@dm0.io">info@dm0.io</a>
+    <p>Cryptographic settlement infrastructure for bilateral finance</p>
+    <p class="subline">Settlement proofs from existing infrastructure</p>
+    <a href="mailto:allan@dm0.io">allan@dm0.io</a>
   </main>
 </body>
 </html>
